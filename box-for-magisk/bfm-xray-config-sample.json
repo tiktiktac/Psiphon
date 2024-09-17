@@ -21,7 +21,7 @@
                     "http",
                     "tls"
                 ],
-                "enabled": true,
+                "enabled": false,
                 "routeOnly": false
             },
             "streamSettings": {
