@@ -9,8 +9,8 @@ fi
 mkdir -p /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp
 rm -rf /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/*
 cp /data/data/com.termux/files/home/Psiphon/box-for-magisk/bfm-settings.ini /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-settings.ini
-cp ./data/data/com.termux/files/home/Psiphon/box-for-magisk/bfm-clash-config.yaml /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-clash-config.yaml
-cp ./data/data/com.termux/files/home/Psiphon/box-for-magisk/bfm-xray-config.json /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-xray-config.json
+cp /data/data/com.termux/files/home/Psiphon/box-for-magisk/bfm-clash-config.yaml /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-clash-config.yaml
+cp /data/data/com.termux/files/home/Psiphon/box-for-magisk/bfm-xray-config.json /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-xray-config.json
 
 sed -i 's/bin_name=\"clash\"/bin_name=\"xray\"/g' /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-settings.ini
 sed -i 's/bin_name=\"sing-box\"/bin_name=\"xray\"/g' /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-settings.ini
