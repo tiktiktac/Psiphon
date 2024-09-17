@@ -13,7 +13,7 @@ SocksDroid [https://github.com/bndeff/socksdroid/releases/download/1.0.4/socksdr
 **Open termux and run:**
 
 ```bash
-rm -rf Psiphon && pkg install git && git clone https://github.com/tiktiktac/Psiphon.git && clear && cd Psiphon && chmod a+x tun && chmod a+x psiphon-tunnel-core && chmod a+x bfm-allow-wifi.sh && chmod a+x enable*.sh && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.bashrc && source $HOME/.bashrc && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.zshrc && source $HOME/.zshrc && clear && cd
+rm -rf Psiphon && pkg install git && git clone https://github.com/tiktiktac/Psiphon.git && clear && cd Psiphon && chmod a+x tun && chmod a+x psiphon-tunnel-core && chmod a+x *.sh && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.bashrc && source $HOME/.bashrc && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.zshrc && source $HOME/.zshrc && clear && cd
 ```
 
 ## Configuration & Usage:
