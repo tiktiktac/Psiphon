@@ -11,14 +11,16 @@ SocksDroid [https://github.com/bndeff/socksdroid/releases/download/1.0.4/socksdr
 ## Install
 
 **Open termux and run:**
-
+1. Grant access storage permission
+```bash
+termux-setup-storage
+```
+2. Install
 ```bash
 rm -rf Psiphon && pkg install git && pkg install screen && git clone https://github.com/trongtinh7727/Psiphon.git && clear && cd Psiphon && chmod a+x tun && chmod a+x psiphon-tunnel-core && chmod a+x *.sh && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.bashrc && source $HOME/.bashrc && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.zshrc && source $HOME/.zshrc && clear && cd
 ```
 
 ## Configuration & Usage:
-
------
 **Android (Termux)**
 
 ### Step1 - SocksDroid Setup:
