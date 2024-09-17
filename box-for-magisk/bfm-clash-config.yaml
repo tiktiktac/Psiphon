@@ -1,0 +1,36 @@
+tproxy-port: 7893
+bind-address: "*"
+mode: rule
+allow-lan: true
+log-level: silent
+external-controller: 0.0.0.0:9090
+external-ui: "/data/adb/box/clash/dashboard"
+unified-delay: true
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:1053
+  enhanced-mode: redir-host
+  use-host: true
+  nameserver:
+    - 203.113.131.6
+    - 203.113.131.1
+  fallback:
+    - 8.8.8.8
+    - 1.1.1.1
+proxies:
+  - name: PSIPHON
+    server: 127.0.0.1
+    port: 1080
+    type: socks5
+    skip-cert-verify: true
+    udp: true
+proxy-groups:
+  - name: TTKTIKTAC
+    type: select
+    proxies:
+      - PSIPHON
+      - DIRECT
+rules:
+  - MATCH,TTKTIKTAC
