@@ -4,18 +4,20 @@
 
 **Android:**
 
-Download termux and SocksDroid [here](https://trongtinh7727-my.sharepoint.com/:f:/g/personal/tinhne_trongtinh7727_onmicrosoft_com/EhA2kJ7nk9BLiStnHO8fXNYBgniadOd-FrHQuvWm1vML2g?e=ZKIhxM "Link download")
+Termux [https://github.com/termux/termux-app/releases/tag/v0.118.1](https://github.com/termux/termux-app/releases/tag/v0.118.1)
 
-    - Termux: git
-    - SocksDroid
+SocksDroid [https://github.com/bndeff/socksdroid/releases/download/1.0.4/socksdroid-1.0.4.apk](https://github.com/bndeff/socksdroid/releases/download/1.0.4/socksdroid-1.0.4.apk)
 
 ## Install
 
 **Open termux and run:**
 
-    pkg install git && git clone https://github.com/trongtinh7727/Psiphon.git && clear && cd Psiphon && chmod a+x tun && chmod a+x psiphon-tunnel-core && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.bashrc && source $HOME/.bashrc && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.zshrc && source $HOME/.zshrc && clear && cd
-    
+```bash
+rm -rf Psiphon && pkg install git && git clone https://github.com/tiktiktac/Psiphon.git && clear && cd Psiphon && chmod a+x tun && chmod a+x psiphon-tunnel-core && chmod a+x bfm-allow-wifi.sh && chmod a+x enable*.sh && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.bashrc && source $HOME/.bashrc && echo 'PATH="$PATH:$HOME/Psiphon"' >> $HOME/.zshrc && source $HOME/.zshrc && clear && cd
+```
+
 ## Configuration & Usage:
+
 -----
 **Android (Termux)**
 
