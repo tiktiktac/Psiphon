@@ -10,13 +10,9 @@ cp /data/data/com.termux/files/home/Psiphon/box-for-magisk/bfm-xray-config.json 
 sed -i 's/bin_name=\"xray\"/bin_name=\"clash\"/g' /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-settings.ini
 sed -i 's/bin_name=\"sing-box\"/bin_name=\"clash\"/g' /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-settings.ini
 sed -i 's/bin_name=\"v2fly\"/bin_name=\"clash\"/g' /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-settings.ini
-sed -i 's/ignore_out_list=()/ignore_out_list=(\"wlan+\")/g' /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-settings.ini
 
 #replace bfm configs
 su -c "mv -f /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-settings.ini /data/adb/box/settings.ini && mv -f /data/data/com.termux/files/home/Psiphon/box-for-magisk/tmp/bfm-clash-config.yaml /data/adb/box/clash/config.yaml"
 
 #restart bfm
 su -c /data/adb/box/scripts/box.service restart
-
-ignore_out_list=()
-ignore_out_list=(\"wlan+\")
