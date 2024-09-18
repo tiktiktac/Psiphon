@@ -48,7 +48,7 @@ external-ui: /data/adb/box/clash/dashboard
 
   # geox-url:
   # mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
-  # geoip: "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat"
+# geoip: "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geoip.dat"
 # geosite: "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/release/geosite.dat"
 
 # 控制是否让 Clash 去匹配进程
@@ -82,7 +82,7 @@ profile:
     # force-domain:
     # - +.v2ex.com
     # # 白名单,跳过嗅探结果
-    # skip-domain:
+  # skip-domain:
   # - Mijia Cloud
 
 tun:
@@ -100,7 +100,7 @@ tun:
     # - 10
     # include_package:
     # - com.android.chrome
-    # exclude_package:
+  # exclude_package:
   # - com.whatsapp
 
 dns:
@@ -196,7 +196,7 @@ dns:
       # 这些域名被视为已污染，匹配到这些域名，会直接使用 fallback解析，不去使用 nameserver
       # domain:
       # - '+.google.com'
-      # - '+.facebook.com'
+    # - '+.facebook.com'
     # - '+.youtube.com'
 
   # hosts:
@@ -209,18 +209,30 @@ proxies:
   # socks5
   - name: "socks"
     type: socks5
-    server: 127.0.0.1
+    server: 0.0.0.0
     port: 1080
     # username: username
     # password: password
     # tls: true
+    # skip-cert-verify: true
+    # udp: true
+  # Trojan
+  - name: "trojan"
+    type: trojan
+    server: yourserver.com
+    port: 443
+    password: your_passwd
+    #udp: true
+    sni: m.tiktok.com # aka server name
+    # alpn:
+    #   - h2
+    #   - http/1.1
     skip-cert-verify: true
-    udp: true
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - socks
+      - trojan
 
 rules:
   ## block ads
