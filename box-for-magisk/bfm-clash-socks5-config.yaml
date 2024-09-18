@@ -232,7 +232,7 @@ proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-      - trojan
+      - socks
 
 rules:
   ## block ads
