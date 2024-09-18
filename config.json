@@ -17,11 +17,11 @@
 		"Timeout": 5,
 		"ShowLog": false
 	},
-	"PsiphonCore": 12,
+	"PsiphonCore": 15,
 	"Psiphon": {
 		"CoreName": "psiphon-tunnel-core",
 		"Tunnel": 1,
-		"Region": "SG",
+		"Region": "JP",
 		"Protocols": [
 			"FRONTED-MEEK-HTTP-OSSH",
 			"FRONTED-MEEK-OSSH"
