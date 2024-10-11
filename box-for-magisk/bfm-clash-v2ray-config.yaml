@@ -228,6 +228,23 @@ proxies:
     #   - h2
     #   - http/1.1
     skip-cert-verify: true
+  # vmess
+  - name: "vmess"
+    type: vmess
+    server: yourserver.com
+    port: 80
+    uuid: uuid
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    # skip-cert-verify: true
+    # servername: example.com # priority over wss host
+    network: ws
+    ws-opts:
+      path: /path-here
+      headers:
+        Host: sni.host.com
 proxy-groups:
   - name: "PROXY"
     type: select
